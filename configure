@@ -13201,9 +13201,9 @@ fi
   fi
 
   if test -z "$withmysqltest" -o "$withmysqltest" = "yes"; then
-    for i in "$MYSQLBIN_PATH" `dirname $(which mysqltest)` /usr/bin /usr/local/bin  ; do
-      if test -n "$i" -a -f "$i/mysqltest" ; then
-        MYSQLTEST="$i/mysqltest $MYSQL_ARGS"
+    for i in "$MYSQLBIN_PATH" `dirname $(which mariadb-test)` /usr/bin /usr/local/bin  ; do
+      if test -n "$i" -a -f "$i/mariadb-test" ; then
+        MYSQLTEST="$i/mariadb-test $MYSQL_ARGS"
       fi
     done
   elif test "$withmysqltest" != "no"; then

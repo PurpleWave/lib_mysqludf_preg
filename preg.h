@@ -31,6 +31,8 @@
  * @brief headers for preg functions
  */
 
+/* Compiler complains about bools */
+#include <stdbool.h>
 
 // Include the libpcre headers
 #include <pcre.h>

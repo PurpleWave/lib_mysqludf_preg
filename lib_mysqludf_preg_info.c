@@ -22,6 +22,8 @@
  * THE SOFTWARE.
  */
 
+/* Compiler complains about bools */
+#include <stdbool.h>
 
 /**
  * @file lib_mysqludf_preg_info.c

@@ -28,6 +28,9 @@
  *        preg udf functions.   
  */
 
+/* Compiler complains about bools */
+#include <stdbool.h>
+
 #include "ghmysql.h"
 #include "preg.h"
 
