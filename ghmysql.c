@@ -111,10 +111,10 @@ char *ghargdups( UDF_ARGS *args , int i , unsigned long *l)
  */
 int ghargIsNullConstant(UDF_ARGS *args, int argNum)
 {
-    if( args->arg_count > argNum && !args->args[argNum] && 
-        !strncmp( args->attributes[argNum], "NULL" , 4 ) )  {
-        return 1 ;
-    }
+    //if( args->arg_count > argNum && !args->args[argNum] && 
+    //    !strncmp( args->attributes[argNum], "NULL" , 4 ) )  {
+    //    return 1 ;
+    //}
 
     return 0 ;
 }
